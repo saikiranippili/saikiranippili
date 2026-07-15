@@ -2,7 +2,7 @@ name: Update profile art
 
 on:
   schedule:
-    - cron: "17 3 * * *"   # daily, off-peak
+    - cron: "30 18 * * *"   # 00:00 IST daily (18:30 UTC previous day)
   workflow_dispatch: {}     # allows manual "Run workflow" trigger
 
 permissions:
