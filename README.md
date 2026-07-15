@@ -17,8 +17,23 @@
 
 **Full Stack Developer · Software Engineer (Fresher) · Open to Opportunities**
 
+<h3 align="center">Connect with me:</h3>
+<p align="center">
+<a href="https://twitter.com/intent/follow?screen_name=ippilisaikiran" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="intent/follow?screen_name=ippilisaikiran" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/saikiranippili" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="saikiranippili" height="30" width="40" /></a>
+<a href="https://fb.com/100010919206372" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="100010919206372" height="30" width="40" /></a>
+<a href="https://instagram.com/iamsaikiranippili" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="iamippilisaikiran" height="30" width="40" /></a>
+<a href="https://www.codechef.com/users/saikiranippili" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="saikiranippili" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/saikiranippili" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="saikiranippili" height="30" width="40" /></a>
+<a href="https://auth.geeksforgeeks.org/user/saikiranippili" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="saikiranippili" height="30" width="40" /></a>
+</p>
+
+![](https://komarev.com/ghpvc/?username=saikiranippili&icon=0&color=blueviolet&abbreviated=true)
+
+<!--
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-saikiranippili-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/saikiranippili)
 [![Instagram](https://img.shields.io/badge/Instagram-iamsaikiranippili-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/iamsaikiranippili)
+-->
 
 <br>
 
