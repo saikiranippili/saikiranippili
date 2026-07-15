@@ -61,6 +61,10 @@ ROWS = [
     ("sec", "Highlights"),
     ("bul", "B.Tech in Computer Science & Engineering, 2024"),
     ("bul", "Open to full-time Software Development roles"),
+    ("bul", "Knowledge of Data Structures & Algorithms, OOP, DBMS, and Computer Networks"),
+    ("bul", "AWS Cloud Foundations and Cisco CCNAv7 Certified"),
+    ("bul", "Former Social Media Coordinator, Entrepreneurship Cell, VSSUT (2022–2024)"),
+    ("bul", "Fluent in English, Hindi, Telugu, and Odia"),
 ]
 
 
