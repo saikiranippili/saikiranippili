@@ -19,6 +19,8 @@ OUT_PATH = os.path.join(HERE, "..", "contrib-heatmap.svg")
 # GitHub-ish green ramp: empty -> brightest. Level 5 is a brighter neon top end.
 PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
 
+HOST = "saikiran"  # shown in the title bar: saikiran@github: ~/contributions --graph
+
 CELL = 12
 GAP = 3
 STEP = CELL + GAP
@@ -98,7 +100,7 @@ def render(data):
             break
 
     canvas_w = PAD + LEFT_LABEL_W + art_w + PAD
-    stats_h = 88
+    stats_h = 108
     canvas_h = TITLEBAR_H + TOP_LABEL_H + art_h + stats_h + PAD
 
     css = f"""
@@ -125,7 +127,7 @@ def render(data):
     for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
         parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
     parts.append(f'<text x="{canvas_w/2}" y="{TITLEBAR_H/2 + 4}" fill="{MUTED}" font-size="12" '
-                 f'text-anchor="middle">saikiranippili\@github: ~/contributions --graph</text>')
+                 f'text-anchor="middle">{HOST}@github: ~/contributions --graph</text>')
 
     grid_top = TITLEBAR_H + TOP_LABEL_H
     grid_left = PAD + LEFT_LABEL_W
@@ -187,6 +189,16 @@ def render(data):
                  f'<tspan fill="{ACCENT}" font-weight="700">{ls} days</tspan></text>')
     parts.append(f'<text x="{canvas_w - PAD}" y="{ly}" font-size="12" fill="{MUTED}" text-anchor="end">'
                  f'best day <tspan fill="{GOLD}" font-weight="700">{best["count"]}</tspan> on {best["date"]}</text>')
+
+    ly += 24
+    refreshed_ist = "unknown"
+    gen_at = data.get("generated_at")
+    if gen_at:
+        utc_dt = datetime.datetime.strptime(gen_at, "%Y-%m-%dT%H:%M:%SZ")
+        ist_dt = utc_dt + datetime.timedelta(hours=5, minutes=30)
+        refreshed_ist = ist_dt.strftime("%b %d, %Y %H:%M IST")
+    parts.append(f'<text x="{canvas_w - PAD}" y="{ly}" font-size="11" fill="{MUTED}" text-anchor="end">'
+                 f'last refreshed <tspan fill="{TEXT}">{refreshed_ist}</tspan></text>')
 
     parts.append("</svg>")
     return "".join(parts)
