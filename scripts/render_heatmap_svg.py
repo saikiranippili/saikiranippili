@@ -183,14 +183,18 @@ def render(data):
     parts.append(f'<text x="{canvas_w - PAD}" y="{ly}" font-size="12" fill="{MUTED}" text-anchor="end">'
                  f'{rng["start"]} &#8594; {rng["end"]}</text>')
     ly += 24
-    parts.append(f'<text x="{PAD}" y="{ly}" font-size="13" fill="{MUTED}">current streak '
+    parts.append(f'<text x="{PAD}" y="{ly}" font-size="13" fill="{MUTED}">Current streak '
                  f'<tspan fill="{ACCENT}" font-weight="700">{cs} days</tspan>'
-                 f'<tspan fill="{MUTED}">   &#183;   longest </tspan>'
+                 f'<tspan fill="{MUTED}">   &#183;   Longest </tspan>'
                  f'<tspan fill="{ACCENT}" font-weight="700">{ls} days</tspan></text>')
     parts.append(f'<text x="{canvas_w - PAD}" y="{ly}" font-size="12" fill="{MUTED}" text-anchor="end">'
-                 f'best day <tspan fill="{GOLD}" font-weight="700">{best["count"]}</tspan> on {best["date"]}</text>')
+                 f'Best day <tspan fill="{GOLD}" font-weight="700">{best["count"]}</tspan> on {best["date"]}</text>')
 
     ly += 24
+    parts.append(f'<text x="{PAD}" y="{ly}" fill="{TEXT}" font-size="13" font-family="ui-monospace, monospace">$</text>')
+    parts.append(f'<rect x="{PAD+11}" y="{ly-11}" width="6" height="14" fill="{ACCENT}">'
+                 f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
+                 f'dur="1s" repeatCount="indefinite"/></rect>')
     refreshed_ist = "unknown"
     gen_at = data.get("generated_at")
     if gen_at:
@@ -198,7 +202,7 @@ def render(data):
         ist_dt = utc_dt + datetime.timedelta(hours=5, minutes=30)
         refreshed_ist = ist_dt.strftime("%b %d, %Y %H:%M IST")
     parts.append(f'<text x="{canvas_w - PAD}" y="{ly}" font-size="11" fill="{MUTED}" text-anchor="end">'
-                 f'last refreshed <tspan fill="{TEXT}">{refreshed_ist}</tspan></text>')
+                 f'Last refreshed on <tspan fill="{GOLD}"font-weight="700">{refreshed_ist}</tspan></text>')
 
     parts.append("</svg>")
     return "".join(parts)
