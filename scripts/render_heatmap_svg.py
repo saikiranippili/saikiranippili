@@ -202,7 +202,7 @@ def render(data):
         ist_dt = utc_dt + datetime.timedelta(hours=5, minutes=30)
         refreshed_ist = ist_dt.strftime("%b %d, %Y %H:%M IST")
     parts.append(f'<text x="{canvas_w - PAD}" y="{ly}" font-size="11" fill="{MUTED}" text-anchor="end">'
-                 f'Last refreshed on <tspan fill="{GOLD}"font-weight="700">{refreshed_ist}</tspan></text>')
+                 f'Last refreshed on <tspan fill="{GOLD}" font-weight="700">{refreshed_ist}</tspan></text>')
 
     parts.append("</svg>")
     return "".join(parts)
