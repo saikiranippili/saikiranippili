@@ -73,7 +73,6 @@ ROWS = [
     ("bul", "Open to full-time Software Development roles"),
     ("bul", "Knowledge of Data Structures & Algorithms, OOP, DBMS, and Computer Networks"),
     ("bul", "AWS Cloud Foundations and Cisco CCNAv7 Certified"),
-    ("bul", "Former Social Media Coordinator, Entrepreneurship Cell, VSSUT (2022\u20132024)"),
     ("bul", "Fluent in English, Hindi, Telugu, and Odia"),
 ]
 
@@ -169,7 +168,7 @@ def build_svg():
 
     parts.extend(row_parts)
     parts.append("</svg>")
-    return "".join(parts), H, content_bottom
+    return "\n".join(parts), H, content_bottom
 
 
 if __name__ == "__main__":
