@@ -5,6 +5,7 @@ name: Update profile art
 
 on:
   schedule:
+    - cron: "0 * * * *"   # every hour, on the hour (UTC)
     - cron: "30 18 * * *"   # 00:00 IST daily (18:30 UTC previous day)
   workflow_dispatch: {}      # allows manual "Run workflow" trigger
   push:
