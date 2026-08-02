@@ -1,12 +1,12 @@
 {
   "username": "saikiranippili",
-  "generated_at": "2026-08-01T23:51:58Z",
+  "generated_at": "2026-08-02T02:09:13Z",
   "range": {
-    "start": "2025-07-27",
-    "end": "2026-08-01"
+    "start": "2025-08-03",
+    "end": "2026-08-02"
   },
-  "total_contributions": 769,
-  "active_days": 297,
+  "total_contributions": 756,
+  "active_days": 290,
   "avg_per_active_day": 2.6,
   "current_streak": {
     "length": 24,
@@ -24,12 +24,8 @@
   },
   "monthly": [
     {
-      "month": "2025-07",
-      "total": 7
-    },
-    {
       "month": "2025-08",
-      "total": 43
+      "total": 36
     },
     {
       "month": "2025-09",
@@ -77,38 +73,10 @@
     },
     {
       "month": "2026-08",
-      "total": 15
+      "total": 16
     }
   ],
   "days": [
-    {
-      "date": "2025-07-27",
-      "count": 2
-    },
-    {
-      "date": "2025-07-28",
-      "count": 1
-    },
-    {
-      "date": "2025-07-29",
-      "count": 1
-    },
-    {
-      "date": "2025-07-30",
-      "count": 2
-    },
-    {
-      "date": "2025-07-31",
-      "count": 1
-    },
-    {
-      "date": "2025-08-01",
-      "count": 4
-    },
-    {
-      "date": "2025-08-02",
-      "count": 3
-    },
     {
       "date": "2025-08-03",
       "count": 0
@@ -1563,7 +1531,11 @@
     },
     {
       "date": "2026-08-01",
-      "count": 15
+      "count": 16
+    },
+    {
+      "date": "2026-08-02",
+      "count": 0
     }
   ]
 }
